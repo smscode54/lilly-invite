@@ -213,10 +213,10 @@ export default function Home() {
         #bgCanvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
         #floorCanvas{position:fixed;bottom:0;left:0;width:100%;height:33%;pointer-events:none;z-index:0;opacity:0.5;}
         .above{position:relative;z-index:3;}
-        .nt-lets{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:transparent;-webkit-text-stroke:2px #00f0ff;text-shadow:0 0 6px #00f0ff,0 0 12px #00f0ff88;line-height:1;animation:fl1 7s infinite;}
-        .nt-roll{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:transparent;-webkit-text-stroke:2px #c040ff;text-shadow:0 0 6px #c040ff,0 0 12px #c040ff88;line-height:1;}
-        .nt-party{font-family:'Pacifico',cursive;font-size:3.4rem;text-align:center;color:#fff;text-shadow:0 0 6px #fff,0 0 14px #ff2d78,0 0 28px #ff2d7866;margin:0.2rem 0;animation:fl2 9s infinite;}
-        .nt-name{font-family:'Fredoka One',cursive;font-size:3.8rem;text-align:center;color:#ffd700;text-shadow:0 0 4px #ffd70088;animation:fl3 5s infinite;margin-top:0.3rem;}
+        .nt-lets{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:#050010;-webkit-text-stroke:2.5px #00f0ff;text-shadow:0 0 8px #00f0ff;line-height:1;animation:fl1 7s infinite;}
+        .nt-roll{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:#050010;-webkit-text-stroke:2.5px #c040ff;text-shadow:0 0 8px #c040ff;line-height:1;}
+        .nt-party{font-family:'Pacifico',cursive;font-size:3.4rem;text-align:center;color:#fff;text-shadow:0 0 6px #ff2d78;margin:0.2rem 0;animation:fl2 9s infinite;}
+        .nt-name{font-family:'Fredoka One',cursive;font-size:3.8rem;text-align:center;color:#050010;-webkit-text-stroke:2.5px #ffd700;text-shadow:0 0 8px #ffd700;animation:fl3 5s infinite;margin-top:0.3rem;}
         @keyframes fl1{0%,18%,20%,54%,56%,100%{opacity:1;}19%,55%{opacity:0.75;}}
         @keyframes fl2{0%,88%,90%,100%{opacity:1;}89%{opacity:0.6;}}
         @keyframes fl3{0%,60%,62%,100%{opacity:1;}61%{opacity:0.65;}}
@@ -228,7 +228,7 @@ export default function Home() {
         .ticker-wrap{overflow:hidden;margin-bottom:0.4rem;}
         .ticker{white-space:nowrap;display:inline-block;animation:tick 22s linear infinite;font-family:'Fredoka One',cursive;font-size:1.2rem;color:#ffd700;text-shadow:none;}
         @keyframes tick{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}
-        .banner-name{font-family:'Fredoka One',cursive;font-size:3.2rem;color:#ffd700;text-shadow:0 0 4px #ffd70066;}
+        .banner-name{font-family:'Fredoka One',cursive;font-size:3.2rem;color:#050010;-webkit-text-stroke:2px #ffd700;text-shadow:0 0 8px #ffd700;}
         .banner-date{font-size:1.1rem;letter-spacing:3px;color:#00f0ff;text-shadow:none;margin-top:0.4rem;}
         .nav-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(192,64,255,0.2);}
         .nav-btn{padding:1.4rem 1rem;background:rgba(5,0,15,0.95);border:none;color:#fff;font-family:'Fredoka One',cursive;font-size:1.4rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:0.4rem;}
@@ -316,7 +316,7 @@ export default function Home() {
         <div className="content">
           {panel === 'details' && (
             <div>
-              <div className="panel-title" style={{color:'#ff2d78'}}>Party Details 📍</div>
+              <div className="panel-title" style={{color:'#050010',WebkitTextStroke:'2px #ff2d78',textShadow:'0 0 8px #ff2d78'}}>Party Details 📍</div>
               <div className="info-card">
                 <div className="info-row"><span className="info-label">When</span><span className="info-val">{details.detail_when}</span></div>
                 <div className="info-row"><span className="info-label">Where</span><span className="info-val">{details.detail_where}</span></div>
@@ -329,7 +329,7 @@ export default function Home() {
           {/* RSVP panel */}
           {panel === 'rsvp' && (
             <div>
-              <div className="panel-title" style={{color:'#7fff7f'}}>RSVP 🎉</div>
+              <div className="panel-title" style={{color:'#050010',WebkitTextStroke:'2px #7fff7f',textShadow:'0 0 8px #7fff7f'}}>RSVP 🎉</div>
               {!rsvpDone ? (
                 <div className="rsvp-card">
                   <p style={{fontSize:'0.95rem',color:'#c0a0ff',marginBottom:'0.25rem'}}>Will you be joining us on the rink?</p>
