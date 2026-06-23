@@ -213,10 +213,10 @@ export default function Home() {
         #bgCanvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
         #floorCanvas{position:fixed;bottom:0;left:0;width:100%;height:33%;pointer-events:none;z-index:0;opacity:0.5;}
         .above{position:relative;z-index:3;}
-        .nt-lets{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:transparent;-webkit-text-stroke:3px #00f0ff;text-shadow:0 0 15px #00f0ff,0 0 35px #00f0ffaa;line-height:1;animation:fl1 7s infinite;}
-        .nt-roll{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:transparent;-webkit-text-stroke:3px #c040ff;text-shadow:0 0 15px #c040ff,0 0 35px #c040ffaa;line-height:1;}
-        .nt-party{font-family:'Pacifico',cursive;font-size:3.4rem;text-align:center;color:#fff;text-shadow:0 0 8px #fff,0 0 20px #fff,0 0 40px #ff2d78,0 0 80px #ff2d78aa;margin:0.2rem 0;animation:fl2 9s infinite;}
-        .nt-name{font-family:'Fredoka One',cursive;font-size:3.8rem;text-align:center;color:transparent;-webkit-text-stroke:3px #ffd700;text-shadow:0 0 12px #ffd700,0 0 30px #ffd700aa;animation:fl3 5s infinite;margin-top:0.3rem;}
+        .nt-lets{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:transparent;-webkit-text-stroke:2px #00f0ff;text-shadow:0 0 6px #00f0ff,0 0 12px #00f0ff88;line-height:1;animation:fl1 7s infinite;}
+        .nt-roll{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:transparent;-webkit-text-stroke:2px #c040ff;text-shadow:0 0 6px #c040ff,0 0 12px #c040ff88;line-height:1;}
+        .nt-party{font-family:'Pacifico',cursive;font-size:3.4rem;text-align:center;color:#fff;text-shadow:0 0 6px #fff,0 0 14px #ff2d78,0 0 28px #ff2d7866;margin:0.2rem 0;animation:fl2 9s infinite;}
+        .nt-name{font-family:'Fredoka One',cursive;font-size:3.8rem;text-align:center;color:transparent;-webkit-text-stroke:2px #ffd700;text-shadow:0 0 6px #ffd700,0 0 14px #ffd70088;animation:fl3 5s infinite;margin-top:0.3rem;}
         @keyframes fl1{0%,18%,20%,54%,56%,100%{opacity:1;}19%,55%{opacity:0.75;}}
         @keyframes fl2{0%,88%,90%,100%{opacity:1;}89%{opacity:0.6;}}
         @keyframes fl3{0%,60%,62%,100%{opacity:1;}61%{opacity:0.65;}}
