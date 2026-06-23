@@ -216,20 +216,20 @@ export default function Home() {
         .nt-lets{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:transparent;-webkit-text-stroke:2px #00f0ff;text-shadow:0 0 6px #00f0ff,0 0 12px #00f0ff88;line-height:1;animation:fl1 7s infinite;}
         .nt-roll{font-family:'Fredoka One',cursive;font-size:5.5rem;letter-spacing:4px;text-align:center;color:transparent;-webkit-text-stroke:2px #c040ff;text-shadow:0 0 6px #c040ff,0 0 12px #c040ff88;line-height:1;}
         .nt-party{font-family:'Pacifico',cursive;font-size:3.4rem;text-align:center;color:#fff;text-shadow:0 0 6px #fff,0 0 14px #ff2d78,0 0 28px #ff2d7866;margin:0.2rem 0;animation:fl2 9s infinite;}
-        .nt-name{font-family:'Fredoka One',cursive;font-size:3.8rem;text-align:center;color:transparent;-webkit-text-stroke:2px #ffd700;text-shadow:0 0 6px #ffd700,0 0 14px #ffd70088;animation:fl3 5s infinite;margin-top:0.3rem;}
+        .nt-name{font-family:'Fredoka One',cursive;font-size:3.8rem;text-align:center;color:#ffd700;text-shadow:0 0 4px #ffd70088;animation:fl3 5s infinite;margin-top:0.3rem;}
         @keyframes fl1{0%,18%,20%,54%,56%,100%{opacity:1;}19%,55%{opacity:0.75;}}
         @keyframes fl2{0%,88%,90%,100%{opacity:1;}89%{opacity:0.6;}}
         @keyframes fl3{0%,60%,62%,100%{opacity:1;}61%{opacity:0.65;}}
-        .enter-btn{margin:1.2rem auto 0.5rem;padding:0.9rem 2.5rem;background:transparent;border:3px solid #ff2d78;border-radius:50px;font-family:'Fredoka One',cursive;font-size:1.4rem;color:#fff;cursor:pointer;box-shadow:0 0 18px #ff2d78,0 0 40px #ff2d7844,inset 0 0 18px #ff2d7811;text-shadow:0 0 10px #ff2d78;animation:btnp 2s ease-in-out infinite;display:block;}
-        @keyframes btnp{0%,100%{box-shadow:0 0 18px #ff2d78,0 0 40px #ff2d7844;}50%{box-shadow:0 0 40px #ff2d78,0 0 80px #ff2d7866;}}
+        .enter-btn{margin:1.2rem auto 0.5rem;padding:0.9rem 2.5rem;background:transparent;border:3px solid #ff2d78;border-radius:50px;font-family:'Fredoka One',cursive;font-size:1.4rem;color:#fff;cursor:pointer;box-shadow:0 0 12px #ff2d78;text-shadow:0 0 6px #ff2d78;animation:btnp 2s ease-in-out infinite;display:block;}
+        @keyframes btnp{0%,100%{box-shadow:0 0 12px #ff2d78;}50%{box-shadow:0 0 22px #ff2d78;}}
         .skate-img{width:230px;height:230px;object-fit:contain;display:block;margin:0.4rem auto;animation:sglow 3s ease-in-out infinite;}
-        @keyframes sglow{0%,100%{filter:drop-shadow(0 0 8px #ff2d78) drop-shadow(0 0 18px #c040ffaa);}50%{filter:drop-shadow(0 0 20px #ff2d78) drop-shadow(0 0 40px #c040ffcc) drop-shadow(0 0 60px #00f0ff66);}}
+        @keyframes sglow{0%,100%{filter:drop-shadow(0 0 6px #ff2d78) drop-shadow(0 0 10px #c040ffaa);}50%{filter:drop-shadow(0 0 12px #ff2d78) drop-shadow(0 0 20px #c040ffcc);}}
         .top-bar{background:rgba(10,0,30,0.95);border-bottom:2px solid #c040ff;box-shadow:0 0 25px #c040ff44;padding:1rem;text-align:center;overflow:hidden;}
         .ticker-wrap{overflow:hidden;margin-bottom:0.4rem;}
-        .ticker{white-space:nowrap;display:inline-block;animation:tick 22s linear infinite;font-family:'Fredoka One',cursive;font-size:1.2rem;color:#ffd700;text-shadow:0 0 8px #ffd700;}
+        .ticker{white-space:nowrap;display:inline-block;animation:tick 22s linear infinite;font-family:'Fredoka One',cursive;font-size:1.2rem;color:#ffd700;text-shadow:none;}
         @keyframes tick{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}
-        .banner-name{font-family:'Fredoka One',cursive;font-size:3.2rem;color:transparent;-webkit-text-stroke:2px #ffd700;text-shadow:0 0 12px #ffd700,0 0 30px #ffd700aa;}
-        .banner-date{font-size:1.1rem;letter-spacing:3px;color:#00f0ff;text-shadow:0 0 8px #00f0ff;margin-top:0.4rem;}
+        .banner-name{font-family:'Fredoka One',cursive;font-size:3.2rem;color:#ffd700;text-shadow:0 0 4px #ffd70066;}
+        .banner-date{font-size:1.1rem;letter-spacing:3px;color:#00f0ff;text-shadow:none;margin-top:0.4rem;}
         .nav-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(192,64,255,0.2);}
         .nav-btn{padding:1.4rem 1rem;background:rgba(5,0,15,0.95);border:none;color:#fff;font-family:'Fredoka One',cursive;font-size:1.4rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:0.4rem;}
         .nav-btn.active{background:rgba(20,0,50,0.98);}
@@ -238,20 +238,19 @@ export default function Home() {
         .info-card{background:rgba(15,0,40,0.9);border:1px solid rgba(192,64,255,0.35);border-radius:16px;padding:1.5rem;margin-bottom:1rem;}
         .info-row{display:flex;flex-direction:column;gap:0.3rem;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.08);}
         .info-row:last-child{border-bottom:none;}
-        .info-label{font-size:0.8rem;letter-spacing:3px;text-transform:uppercase;color:#c040ff;text-shadow:0 0 8px #c040ff88;font-family:'Fredoka One',cursive;}
+        .info-label{font-size:0.8rem;letter-spacing:3px;text-transform:uppercase;color:#c040ff;text-shadow:none;font-family:'Fredoka One',cursive;}
         .info-val{color:#fff;line-height:1.6;font-size:1.15rem;}
         .panel-title{font-family:'Fredoka One',cursive;font-size:2.8rem;margin-bottom:1.25rem;}
         .rsvp-card{background:rgba(15,0,40,0.9);border:1px solid rgba(192,64,255,0.35);border-radius:20px;padding:2rem;text-align:center;}
         .rsvp-input{width:100%;padding:1rem 1.25rem;border-radius:12px;border:2px solid #c040ff66;background:rgba(0,0,0,0.6);color:#fff;font-family:'Space Mono',monospace;font-size:1.1rem;margin:1rem 0;outline:none;}
-        .btn-yes{width:100%;padding:1.3rem 1.5rem;border:3px solid #7fff7f;border-radius:14px;background:transparent;font-family:'Fredoka One',cursive;font-size:1.5rem;color:#fff;cursor:pointer;box-shadow:0 0 18px #7fff7f88;text-shadow:0 0 10px #7fff7f;margin-bottom:1rem;animation:yesp 2.5s ease-in-out infinite;}
-        @keyframes yesp{0%,100%{box-shadow:0 0 18px #7fff7f88;}50%{box-shadow:0 0 35px #7fff7fcc;}}
-        .btn-no{width:100%;padding:1.3rem 1.5rem;border:3px solid #ff6688;border-radius:14px;background:transparent;font-family:'Fredoka One',cursive;font-size:1.3rem;color:#ccc;cursor:pointer;box-shadow:0 0 12px #ff668855;text-shadow:0 0 8px #ff6688aa;}
-        .back-btn{width:100%;max-width:380px;padding:1.2rem 2rem;background:transparent;border:3px solid #c040ff;border-radius:50px;font-family:'Fredoka One',cursive;font-size:1.8rem;color:#fff;cursor:pointer;box-shadow:0 0 18px #c040ff88;text-shadow:0 0 10px #c040ff;}
+        .btn-yes{width:100%;padding:1.3rem 1.5rem;border:3px solid #7fff7f;border-radius:14px;background:transparent;font-family:'Fredoka One',cursive;font-size:1.5rem;color:#7fff7f;cursor:pointer;box-shadow:0 0 10px #7fff7f44;margin-bottom:1rem;}
+        .btn-no{width:100%;padding:1.3rem 1.5rem;border:3px solid #ff6688;border-radius:14px;background:transparent;font-family:'Fredoka One',cursive;font-size:1.3rem;color:#ff6688;cursor:pointer;box-shadow:0 0 8px #ff668833;}
+        .back-btn{width:100%;max-width:380px;padding:1.2rem 2rem;background:transparent;border:3px solid #c040ff;border-radius:50px;font-family:'Fredoka One',cursive;font-size:1.8rem;color:#fff;cursor:pointer;box-shadow:0 0 10px #c040ff44;}
         .host-box{background:rgba(15,0,40,0.95);border:2px solid #c040ff;border-radius:20px;padding:2rem;width:100%;max-width:400px;}
         .host-input{width:100%;padding:0.85rem 1rem;border-radius:12px;border:2px solid #c040ff66;background:rgba(0,0,0,0.6);color:#fff;font-family:'Space Mono',monospace;font-size:0.95rem;margin-bottom:1rem;outline:none;}
-        .host-btn-enter{width:100%;padding:0.9rem;background:transparent;border:2px solid #c040ff;border-radius:50px;font-family:'Fredoka One',cursive;font-size:1.2rem;color:#fff;cursor:pointer;text-shadow:0 0 10px #c040ff;}
+        .host-btn-enter{width:100%;padding:0.9rem;background:transparent;border:2px solid #c040ff;border-radius:50px;font-family:'Fredoka One',cursive;font-size:1.2rem;color:#fff;cursor:pointer;}
         .dash{width:100%;max-width:500px;padding:1.5rem;}
-        .dash-title{font-family:'Fredoka One',cursive;font-size:2rem;text-align:center;margin-bottom:1.5rem;color:transparent;-webkit-text-stroke:2px #ffd700;text-shadow:0 0 15px #ffd700;}
+        .dash-title{font-family:'Fredoka One',cursive;font-size:2rem;text-align:center;margin-bottom:1.5rem;color:#ffd700;text-shadow:none;}
         .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem;}
         .stat-box{background:rgba(15,0,40,0.85);border-radius:16px;padding:1rem;text-align:center;border:1px solid rgba(255,255,255,0.08);}
         .stat-num{font-family:'Fredoka One',cursive;font-size:3rem;line-height:1;}
@@ -307,18 +306,17 @@ export default function Home() {
           <div className="banner-date">{details.banner_datetime}</div>
         </div>
         <div className="nav-grid">
-          <button className={`nav-btn ${panel === 'details' ? 'active' : ''}`} onClick={() => setPanel('details')} style={{color:'#ff2d78',textShadow:'0 0 8px #ff2d78'}}>
+          <button className={`nav-btn ${panel === 'details' ? 'active' : ''}`} onClick={() => setPanel('details')} style={{color:'#ff2d78'}}>
             <span className="ico">📍</span>Details
           </button>
-          <button className={`nav-btn ${panel === 'rsvp' ? 'active' : ''}`} onClick={() => setPanel('rsvp')} style={{color:'#7fff7f',textShadow:'0 0 8px #7fff7f'}}>
+          <button className={`nav-btn ${panel === 'rsvp' ? 'active' : ''}`} onClick={() => setPanel('rsvp')} style={{color:'#7fff7f'}}>
             <span className="ico">✅</span>Click here to RSVP
           </button>
         </div>
         <div className="content">
-          {/* Details panel */}
           {panel === 'details' && (
             <div>
-              <div className="panel-title" style={{color:'transparent',WebkitTextStroke:'2px #ff2d78',textShadow:'0 0 12px #ff2d78,0 0 30px #ff2d7888'}}>Party Details 📍</div>
+              <div className="panel-title" style={{color:'#ff2d78'}}>Party Details 📍</div>
               <div className="info-card">
                 <div className="info-row"><span className="info-label">When</span><span className="info-val">{details.detail_when}</span></div>
                 <div className="info-row"><span className="info-label">Where</span><span className="info-val">{details.detail_where}</span></div>
@@ -331,7 +329,7 @@ export default function Home() {
           {/* RSVP panel */}
           {panel === 'rsvp' && (
             <div>
-              <div className="panel-title" style={{color:'transparent',WebkitTextStroke:'2px #7fff7f',textShadow:'0 0 12px #7fff7f88'}}>RSVP 🎉</div>
+              <div className="panel-title" style={{color:'#7fff7f'}}>RSVP 🎉</div>
               {!rsvpDone ? (
                 <div className="rsvp-card">
                   <p style={{fontSize:'0.95rem',color:'#c0a0ff',marginBottom:'0.25rem'}}>Will you be joining us on the rink?</p>
